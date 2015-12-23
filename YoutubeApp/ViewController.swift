@@ -11,9 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var videos:[Video] = [Video]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let model = VideoModel()
+        self.videos = model.getVideos()
     }
 
     override func didReceiveMemoryWarning() {
