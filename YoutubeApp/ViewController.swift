@@ -46,8 +46,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let videotitle = videos[indexPath.row].videoTitle
         
+        // Get the label for the cell
+        let label = cell.viewWithTag(2) as! UILabel
+        label.text = videotitle
+        
         // Cunstruct the video thumbnail url
-        let videoThumnailUrlString = "https://i1.ytimg.com/vi/" + videos[indexPath.row].videoId + "/mqdefault.jpg"
+        let videoThumnailUrlString = "https://i1.ytimg.com/vi/" + videos[indexPath.row].videoId + "/maxresdefault.jpg"
         
         // Create an NSURL object
         let videoThumnailUrl = NSURL(string: videoThumnailUrlString)

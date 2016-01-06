@@ -32,13 +32,38 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="179.5"/>
                                                     <animations/>
                                                 </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ap5-v2-Aeb">
+                                                    <rect key="frame" x="0.0" y="99.5" width="600" height="80"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="nZb-HH-Ess"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaT-AL-X4O">
+                                                    <rect key="frame" x="20" y="99.5" width="560" height="80"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="aYF-vR-yRE"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="lgR-p2-cCp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstItem="Btv-aI-lpK" firstAttribute="leading" secondItem="QFD-Y0-58J" secondAttribute="leading" id="XNI-rv-OUd"/>
+                                                <constraint firstAttribute="trailing" secondItem="PaT-AL-X4O" secondAttribute="trailing" constant="20" id="YkB-KX-c5i"/>
                                                 <constraint firstAttribute="trailing" secondItem="Btv-aI-lpK" secondAttribute="trailing" id="ZYW-8s-vQh"/>
                                                 <constraint firstItem="Btv-aI-lpK" firstAttribute="top" secondItem="QFD-Y0-58J" secondAttribute="top" id="akR-J7-LUJ"/>
                                                 <constraint firstAttribute="bottom" secondItem="Btv-aI-lpK" secondAttribute="bottom" id="gDz-wq-hXr"/>
+                                                <constraint firstAttribute="bottom" secondItem="ap5-v2-Aeb" secondAttribute="bottom" id="mpp-Fd-Ve1"/>
+                                                <constraint firstAttribute="bottom" secondItem="PaT-AL-X4O" secondAttribute="bottom" id="oKO-2h-Uax"/>
+                                                <constraint firstAttribute="trailing" secondItem="ap5-v2-Aeb" secondAttribute="trailing" id="xPl-SY-R0Y"/>
+                                                <constraint firstItem="ap5-v2-Aeb" firstAttribute="leading" secondItem="QFD-Y0-58J" secondAttribute="leading" id="zBu-bz-Miz"/>
+                                                <constraint firstItem="PaT-AL-X4O" firstAttribute="leading" secondItem="QFD-Y0-58J" secondAttribute="leading" constant="20" id="zRm-eh-1Zg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
