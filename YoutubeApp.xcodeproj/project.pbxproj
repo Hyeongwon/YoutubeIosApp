@@ -14,6 +14,7 @@
 		A7D7B6D61C299542002148D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D7B6D41C299542002148D9 /* LaunchScreen.storyboard */; };
 		A7D7B6DE1C2AEA69002148D9 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7B6DD1C2AEA69002148D9 /* Video.swift */; settings = {ASSET_TAGS = (); }; };
 		A7D7B6E01C2AEB96002148D9 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7B6DF1C2AEB96002148D9 /* VideoModel.swift */; settings = {ASSET_TAGS = (); }; };
+		A7D7B6E21C4A822E002148D9 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7B6E11C4A822E002148D9 /* VideoDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A7D7B6D71C299542002148D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7D7B6DD1C2AEA69002148D9 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		A7D7B6DF1C2AEB96002148D9 /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		A7D7B6E11C4A822E002148D9 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				A7D7B6CB1C299542002148D9 /* AppDelegate.swift */,
 				A7D7B6CD1C299542002148D9 /* ViewController.swift */,
+				A7D7B6E11C4A822E002148D9 /* VideoDetailViewController.swift */,
 				A7D7B6DD1C2AEA69002148D9 /* Video.swift */,
 				A7D7B6DF1C2AEB96002148D9 /* VideoModel.swift */,
 				A7D7B6CF1C299542002148D9 /* Main.storyboard */,
@@ -143,6 +146,7 @@
 				A7D7B6CE1C299542002148D9 /* ViewController.swift in Sources */,
 				A7D7B6DE1C2AEA69002148D9 /* Video.swift in Sources */,
 				A7D7B6CC1C299542002148D9 /* AppDelegate.swift in Sources */,
+				A7D7B6E21C4A822E002148D9 /* VideoDetailViewController.swift in Sources */,
 				A7D7B6E01C2AEB96002148D9 /* VideoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

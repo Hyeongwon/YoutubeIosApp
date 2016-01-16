@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Video Detail View Controller-->
         <scene sceneID="S1c-h8-vcp">
             <objects>
-                <viewController id="ZCt-TM-ycG" sceneMemberID="viewController">
+                <viewController id="ZCt-TM-ycG" customClass="VideoDetailViewController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wPe-0z-vXg"/>
                         <viewControllerLayoutGuide type="bottom" id="Lr6-ku-uVq"/>
@@ -15,9 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="a2k-82-biP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxi-mc-i8W">
+                                <rect key="frame" x="20" y="284" width="560" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="xKR-ON-pIW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-qu-QR7">
+                                <rect key="frame" x="20" y="404" width="560" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gA0-d2-RAY">
+                                <rect key="frame" x="0.0" y="84" width="600" height="180"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="6Bu-SR-rXU"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="8LO-gE-hoj"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="9Fh-35-JRa"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="Kz1-eR-Ppy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="nJk-bU-Vhg"/>
+                                    <constraint firstAttribute="height" constant="180" id="w3b-WJ-hjp"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6eh-qu-QR7" secondAttribute="trailing" constant="20" id="Gfs-zC-vMO"/>
+                            <constraint firstItem="6eh-qu-QR7" firstAttribute="leading" secondItem="a2k-82-biP" secondAttribute="leading" constant="20" id="cXu-pP-9kU"/>
+                            <constraint firstItem="gA0-d2-RAY" firstAttribute="leading" secondItem="a2k-82-biP" secondAttribute="leading" id="dhM-rj-YLE"/>
+                            <constraint firstAttribute="trailing" secondItem="Jxi-mc-i8W" secondAttribute="trailing" constant="20" id="dwP-1D-8ey"/>
+                            <constraint firstItem="6eh-qu-QR7" firstAttribute="top" secondItem="Jxi-mc-i8W" secondAttribute="bottom" constant="20" id="fxW-nK-X03"/>
+                            <constraint firstAttribute="trailing" secondItem="gA0-d2-RAY" secondAttribute="trailing" id="hd7-eL-CCN"/>
+                            <constraint firstItem="gA0-d2-RAY" firstAttribute="top" secondItem="a2k-82-biP" secondAttribute="top" constant="84" id="pWF-g9-Swd"/>
+                            <constraint firstItem="Jxi-mc-i8W" firstAttribute="leading" secondItem="a2k-82-biP" secondAttribute="leading" constant="20" id="wlK-C8-b6o"/>
+                            <constraint firstItem="Jxi-mc-i8W" firstAttribute="top" secondItem="gA0-d2-RAY" secondAttribute="bottom" constant="20" id="xwF-cu-wL3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="WebView" destination="gA0-d2-RAY" id="Gpy-42-XkN"/>
+                        <outlet property="descriptionLabel" destination="6eh-qu-QR7" id="IHT-0y-osN"/>
+                        <outlet property="titleLabel" destination="Jxi-mc-i8W" id="0yS-Js-ylU"/>
+                        <outlet property="webView" destination="gA0-d2-RAY" id="28E-CX-xWA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r65-Ts-z29" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
