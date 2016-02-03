@@ -7,9 +7,30 @@
 //
 
 import UIKit
+import Alamofire
 
 class VideoModel: NSObject {
-
+    
+    let API_Key = "AIzaSyAhitkyhBz2cHqTpyDTqqOgSh1K36Gq63c"
+    let UPLOAD_PLAYLIST_ID = "PLMRqhzcHGw1ZF7VdTt2EALt_5i6RELc0k"
+    
+    func getFeedVideos() {
+        
+        Alamofire.request(.GET, "https://www.googleapis.com/youtube/v3/playlistItems", parameters: ["part" : "snippet", "playlistId" : UPLOAD_PLAYLIST_ID, "key" : API_Key], encoding: ParameterEncoding.URL, headers: nil).responseJSON { (response) -> Void in
+            
+            if let JSON = response.result.value {
+                
+                for video in JSON["items"] as! NSArray {
+                    print(video);
+                    
+                    //TODO Create videos objects off of the JSON reponse
+                    
+                }
+            }
+        }
+        //Fetch the videos dynamically through the YouTube DATA API
+    }
+    
     func getVideos() -> [Video] {
         
         // Create a empty array of video objects

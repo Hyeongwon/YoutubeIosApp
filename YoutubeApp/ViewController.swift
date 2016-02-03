@@ -19,7 +19,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         
         let model = VideoModel()
-        self.videos = model.getVideos()
+        //self.videos = model.getVideos()
+        
+        //fire off request to get videos
+        model.getFeedVideos()
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
